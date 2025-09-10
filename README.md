@@ -33,4 +33,7 @@ It leverages the [TweetEval](https://huggingface.co/datasets/cardiffnlp/tweet_ev
 ---
 
 Google Drive for Demo and project : 
+https://drive.google.com/drive/folders/1vYs0hOo5KnF03tiJ6eyo-s_fKOg5N-Hk?usp=sharing
 
+note-book link : 
+https://colab.research.google.com/drive/1bT0oCt29tIK4lyucIY9lhrx1-FYeQEL9?usp=sharing
