@@ -32,4 +32,3 @@ It leverages the [TweetEval](https://huggingface.co/datasets/cardiffnlp/tweet_ev
 
 ---
 
-## 📂 Project Structure
