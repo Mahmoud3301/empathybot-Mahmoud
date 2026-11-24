@@ -1,51 +1,57 @@
 
-# 🐦 EmpathyBot
-### Emotion-Aware Chatbot | TweetEval | RAG | FAISS | Few-Shot Prompting
+🐦 EmpathyBot
 
-EmpathyBot is an NLP-based, emotion-aware chatbot pipeline that combines **emotion classification, Retrieval-Augmented Generation (RAG), semantic search, and few-shot prompt engineering** to generate context-aware explanations for social media text.
+Emotion-Aware Chatbot | TweetEval | RAG | FAISS | Few-Shot Prompting
+
+EmpathyBot is an NLP-based, emotion-aware chatbot pipeline that combines emotion classification, Retrieval-Augmented Generation (RAG), semantic search, and few-shot prompt engineering to generate context-aware explanations for social media text.
 
 The project uses a pretrained DistilBERT emotion classifier, a FAISS-powered retrieval system, and GPT-style text generation to identify emotional patterns and provide supporting context for its predictions.
 
----
+⸻
 
-## ✨ Key Features
+✨ Key Features
 
-### 🧠 1. Emotion Classification
-- Uses [`bhadresh-savani/distilbert-base-uncased-emotion`](https://huggingface.co/bhadresh-savani/distilbert-base-uncased-emotion).
-- Classifies text into six emotion categories:
-  - 😊 Joy
-  - 😢 Sadness
-  - 😡 Anger
-  - ❤️ Love
-  - 😲 Surprise
-  - 😨 Fear
+🧠 1. Emotion Classification
 
-### 🔎 2. Retrieval-Augmented Generation (RAG)
-- Retrieves semantically similar tweets from a knowledge base (`kb.txt`).
-- Uses SentenceTransformers for text embeddings.
-- Uses FAISS for efficient similarity search.
-- Provides retrieved examples as supporting context.
+* Uses bhadresh-savani/distilbert-base-uncased-emotion.
+* Classifies text into six emotion categories:
+    * 😊 Joy
+    * 😢 Sadness
+    * 😡 Anger
+    * ❤️ Love
+    * 😲 Surprise
+    * 😨 Fear
 
-### 🎯 3. Few-Shot Prompt Engineering
-- Incorporates three sampled (tweet, emotion) examples into the generation prompt.
-- Improves contextual grounding and explanation quality.
-- Combines retrieved information with emotion classification results.
+🔎 2. Retrieval-Augmented Generation (RAG)
 
-### 💬 4. Interactive Streamlit Application
+* Retrieves semantically similar tweets from a knowledge base (kb.txt).
+* Uses SentenceTransformers for text embeddings.
+* Uses FAISS for efficient similarity search.
+* Provides retrieved examples as supporting context.
+
+🎯 3. Few-Shot Prompt Engineering
+
+* Incorporates three sampled (tweet, emotion) examples into the generation prompt.
+* Improves contextual grounding and explanation quality.
+* Combines retrieved information with emotion classification results.
+
+💬 4. Interactive Streamlit Application
+
 The application displays:
-- Predicted emotion.
-- Generated explanation.
-- Retrieved supporting tweets.
 
-### ☁️ 5. Google Colab Integration
-- Designed to run on Google Colab.
-- Uses ngrok to expose the Streamlit application through a public URL.
+* Predicted emotion.
+* Generated explanation.
+* Retrieved supporting tweets.
 
----
+☁️ 5. Google Colab Integration
 
-## 🏗️ System Architecture
+* Designed to run on Google Colab.
+* Uses ngrok to expose the Streamlit application through a public URL.
 
-```text
+⸻
+
+🏗️ System Architecture
+
                  User Input
                      |
                      v
@@ -85,35 +91,33 @@ The application displays:
                      |
                      v
               Streamlit UI
-```
 
----
+⸻
 
-## 🛠️ Technologies & Tools
+🛠️ Technologies & Tools
 
-| Category | Technologies |
-|---|---|
-| Programming Language | Python |
-| NLP | Hugging Face Transformers |
-| Emotion Classification | DistilBERT |
-| Dataset | TweetEval |
-| Embeddings | SentenceTransformers |
-| Vector Search | FAISS |
-| Generation | GPT-style Language Models |
-| Application Interface | Streamlit |
-| Cloud Environment | Google Colab |
-| Public Tunneling | ngrok |
+Category	Technologies
+Programming Language	Python
+NLP	Hugging Face Transformers
+Emotion Classification	DistilBERT
+Dataset	TweetEval
+Embeddings	SentenceTransformers
+Vector Search	FAISS
+Generation	GPT-style Language Models
+Application Interface	Streamlit
+Cloud Environment	Google Colab
+Public Tunneling	ngrok
 
----
+⸻
 
-## 📊 Dataset & Pretrained Model
+📊 Dataset & Pretrained Model
 
-### TweetEval – Emotion Dataset
-- Dataset: [Cardiff NLP – TweetEval](https://huggingface.co/datasets/cardiffnlp/tweet_eval)
-- Used for emotion-related tweet classification and evaluation.
-- Original benchmark paper:
+TweetEval – Emotion Dataset
 
-```bibtex
+* Dataset: Cardiff NLP – TweetEval
+* Used for emotion-related tweet classification and evaluation.
+* Original benchmark paper:
+
 @inproceedings{barbieri2020tweeteval,
   title={TweetEval: Unified Benchmark and Comparative Evaluation for Tweet Classification},
   author={Barbieri, Francesco and Camacho-Collados, Jose
@@ -121,93 +125,109 @@ The application displays:
   booktitle={Findings of EMNLP},
   year={2020}
 }
-```
 
-### Pretrained Emotion Model
+Pretrained Emotion Model
 
-Model: [bhadresh-savani/distilbert-base-uncased-emotion](https://huggingface.co/bhadresh-savani/distilbert-base-uncased-emotion)
+Model: bhadresh-savani/distilbert-base-uncased-emotion
 
-- Architecture: DistilBERT.
-- Task: Multi-class emotion classification.
-- Number of emotion categories: 6.
-- Published model license: Apache License 2.0.
+* Architecture: DistilBERT.
+* Task: Multi-class emotion classification.
+* Number of emotion categories: 6.
+* Published model license: Apache License 2.0 (verify the model card and associated files for applicable terms).
 
----
+⸻
 
-## 🚀 Project Resources & Demo
+🚀 Project Resources & Demo
 
-| Resource | Link |
-|---|---|
-| 📂 Google Drive – Project & Demo | [Open Google Drive](https://drive.google.com/drive/folders/1vYs0hOo5KnF03tiJ6eyo-s_fKOg5N-Hk?usp=sharing) |
-| 📓 Google Colab Notebook | [Open Notebook](https://colab.research.google.com/drive/1bT0oCt29tIK4lyucIY9lhrx1-FYeQEL9?usp=sharing) |
-| 🤗 Pretrained Model | [Hugging Face](https://huggingface.co/bhadresh-savani/distilbert-base-uncased-emotion) |
-| 📊 Dataset | [TweetEval](https://huggingface.co/datasets/cardiffnlp/tweet_eval) |
+Resource	Link
+📂 Google Drive – Project & Demo	Open Google Drive
+📓 Google Colab Notebook	Open Notebook
+🤗 Pretrained Model	Hugging Face
+📊 Dataset	TweetEval
 
----
+⸻
 
-## ⚠️ Limitations & Responsible Use
+⚠️ Limitations & Responsible Use
 
-- Emotion classification represents model predictions, not definitive knowledge of a person's emotional or psychological state.
-- Classification accuracy may vary depending on language, context, sarcasm, and text quality.
-- Generated explanations depend on the retrieved examples and the configured generation model.
-- The system is intended for NLP experimentation and educational purposes, not clinical diagnosis or psychological assessment.
-- Users must independently comply with applicable dataset, model, and third-party service terms.
+* Emotion classification represents model predictions, not definitive knowledge of a person’s emotional or psychological state.
+* Classification accuracy may vary depending on language, context, sarcasm, and text quality.
+* Generated explanations depend on the retrieved examples and the configured generation model.
+* The system is intended for NLP experimentation and educational purposes, not clinical diagnosis or psychological assessment.
+* Users must independently comply with applicable dataset, model, library, and third-party service terms.
 
----
+⸻
 
-## 📜 Licensing & Intellectual Property
+📜 Licensing & Intellectual Property
 
-### Project Source Code
+Project Source Code
 
-Copyright (c) 2026 Mahmoud Saeed Mansour.
+Copyright © 2026 Mahmoud Saeed Mansour.
 
-The original source code authored for EmpathyBot is licensed under the **MIT License**.
+The original source code authored specifically for EmpathyBot is distributed under a custom MIT-derived license with an additional attribution requirement.
+
+The full license terms are provided in the LICENSE file in this repository.
 
 You are permitted to:
-- Use the original project code commercially or privately.
-- Modify and adapt the original code.
-- Distribute original code and modified versions.
-- Include the original code in larger projects.
 
-All uses remain subject to the MIT License conditions, including preservation of applicable copyright and license notices.
+* Use the original project code commercially or privately.
+* Copy and modify the original code.
+* Distribute original code and modified versions.
+* Incorporate substantial portions of the original code into other projects.
 
-### Third-Party Components & External Resources
+These permissions are subject to the conditions stated in the LICENSE file, including preservation of copyright and license notices and the additional attribution requirement.
+
+Mandatory Attribution Requirement
+
+Anyone using, copying, modifying, distributing, or incorporating substantial portions of the original EmpathyBot source code into another project must provide clear and visible credit to the original author:
+
+Mahmoud Saeed Mansour
+
+* GitHub: https://github.com/Mahmoud3301
+* Original Project: EmpathyBot repository (link to this repository when applicable).
+
+The attribution must not be removed, obscured, or misrepresented.
+
+Third-Party Components & External Resources
 
 This project incorporates or references third-party resources that remain subject to their respective licenses and terms:
 
-| Component | Original Source | License / Terms |
-|---|---|---|
-| Emotion Classification Model | [Hugging Face](https://huggingface.co/bhadresh-savani/distilbert-base-uncased-emotion) | Apache 2.0 |
-| TweetEval Dataset | [Cardiff NLP](https://huggingface.co/datasets/cardiffnlp/tweet_eval) | Subset-specific terms; see dataset card |
-| FAISS | [Facebook Research](https://github.com/facebookresearch/faiss) | MIT |
-| SentenceTransformers | [UKPLab](https://github.com/UKPLab/sentence-transformers) | See upstream license |
-| Streamlit | [Streamlit](https://github.com/streamlit/streamlit) | See upstream license |
+Component	Original Source	License / Terms
+Emotion Classification Model	Hugging Face	Apache 2.0 (subject to the model’s published terms)
+TweetEval Dataset	Cardiff NLP	Subset-specific terms; see dataset card
+FAISS	Facebook Research	MIT
+SentenceTransformers	UKPLab	See upstream license
+Streamlit	Streamlit	See upstream license
 
-The MIT License for this repository applies only to the original code authored for EmpathyBot. It does not grant ownership of, or override the licensing terms of, third-party models, datasets, libraries, APIs, or external resources.
+The license in this repository applies only to the original source code authored for EmpathyBot.
 
-### Usage Restrictions & Attribution
+It does not grant ownership of, or override the licensing terms of, third-party models, datasets, libraries, APIs, or external resources.
 
-- Original third-party authors and contributors retain their respective rights.
-- Required copyright notices and license conditions must be preserved.
-- Dataset usage must comply with the original dataset terms and applicable platform policies.
-- Commercial use of third-party resources must be evaluated independently.
+Third-Party Usage Conditions
 
----
+* Original third-party authors and contributors retain their respective rights.
+* Applicable copyright notices and license conditions must be preserved.
+* Dataset usage must comply with the original dataset terms and applicable platform policies.
+* Commercial use of third-party resources must be evaluated independently.
+* Users are responsible for reviewing the licenses and terms of all external dependencies before using or distributing them.
 
-## 👨‍💻 Author
+⸻
 
-**Mahmoud Saeed Mansour**
+👨‍💻 Author
+
+Mahmoud Saeed Mansour
 
 AI & Machine Learning Engineer | NLP | RAG | Deep Learning
 
-- GitHub: [@Mahmoud3301](https://github.com/Mahmoud3301)
-- LinkedIn: [Mahmoud Saeed Mansour](https://www.linkedin.com/in/mahmoud-saeed-928623252/)
-- Portfolio: [Personal Portfolio](https://mahmoud3301.github.io/mypersonalweb/)
+* GitHub: @Mahmoud3301
+* LinkedIn: Mahmoud Saeed Mansour
+* Portfolio: Personal Portfolio
 
----
+⸻
 
-## © Copyright Notice
+© Copyright Notice
 
-© 2026 Mahmoud Saeed Mansour. All rights reserved to the original project contributions, subject to the MIT License and the applicable rights and licenses of third-party components.
+© 2026 Mahmoud Saeed Mansour.
 
-Unauthorized removal or misrepresentation of original authorship and attribution is not permitted.
+All rights reserved to the original project contributions, subject to the custom license terms stated in the LICENSE file and the applicable rights and licenses of third-party components.
+
+Unauthorized removal, concealment, or misrepresentation of the original authorship and required attribution is not permitted.
