@@ -133,7 +133,7 @@ Model: bhadresh-savani/distilbert-base-uncased-emotion
 * Architecture: DistilBERT.
 * Task: Multi-class emotion classification.
 * Number of emotion categories: 6.
-* Published model license: Apache License 2.0 (verify the model card and associated files for applicable terms).
+* Published model license: Apache License 2.0 (subject to the model card and associated files).
 
 ⸻
 
@@ -144,6 +144,8 @@ Resource	Link
 📓 Google Colab Notebook	Open Notebook
 🤗 Pretrained Model	Hugging Face
 📊 Dataset	TweetEval
+📜 Project License	View LICENSE
+💻 GitHub Repository	EmpathyBot
 
 ⸻
 
@@ -165,50 +167,64 @@ Copyright © 2026 Mahmoud Saeed Mansour.
 
 The original source code authored specifically for EmpathyBot is distributed under a custom MIT-derived license with an additional attribution requirement.
 
-The full license terms are provided in the LICENSE file in this repository.
+The complete license terms are available in the repository’s LICENSE file.
 
-You are permitted to:
+License: MIT License with Additional Attribution Requirement
 
-* Use the original project code commercially or privately.
-* Copy and modify the original code.
-* Distribute original code and modified versions.
-* Incorporate substantial portions of the original code into other projects.
+This license permits:
 
-These permissions are subject to the conditions stated in the LICENSE file, including preservation of copyright and license notices and the additional attribution requirement.
+* Commercial and private use of the original project code.
+* Copying and modifying the original source code.
+* Distribution of original and modified versions.
+* Incorporating substantial portions of the original code into other projects.
+
+All permissions are subject to the conditions specified in the LICENSE file.
 
 Mandatory Attribution Requirement
 
-Anyone using, copying, modifying, distributing, or incorporating substantial portions of the original EmpathyBot source code into another project must provide clear and visible credit to the original author:
+Anyone using, copying, modifying, distributing, or incorporating substantial portions of the original EmpathyBot source code into another project must provide clear and visible credit to the original author.
 
-Mahmoud Saeed Mansour
+Original Author: Mahmoud Saeed Mansour
 
-* GitHub: https://github.com/Mahmoud3301
-* Original Project: EmpathyBot repository (link to this repository when applicable).
+* GitHub Profile: @Mahmoud3301
+* Original Repository: EmpathyBot – GitHub
+* License: LICENSE
 
 The attribution must not be removed, obscured, or misrepresented.
 
+Where applicable, users must include a link to the original repository.
+
 Third-Party Components & External Resources
 
-This project incorporates or references third-party resources that remain subject to their respective licenses and terms:
+This project incorporates or references third-party resources that remain subject to their respective licenses and terms.
 
 Component	Original Source	License / Terms
-Emotion Classification Model	Hugging Face	Apache 2.0 (subject to the model’s published terms)
-TweetEval Dataset	Cardiff NLP	Subset-specific terms; see dataset card
+Emotion Classification Model	Hugging Face	Apache 2.0 (verify model card and associated files)
+TweetEval Dataset	Cardiff NLP	Check dataset card and applicable terms
 FAISS	Facebook Research	MIT
 SentenceTransformers	UKPLab	See upstream license
 Streamlit	Streamlit	See upstream license
 
-The license in this repository applies only to the original source code authored for EmpathyBot.
+Important:
 
-It does not grant ownership of, or override the licensing terms of, third-party models, datasets, libraries, APIs, or external resources.
+The custom license in this repository applies only to the original source code authored for EmpathyBot.
 
-Third-Party Usage Conditions
+It does not:
 
-* Original third-party authors and contributors retain their respective rights.
-* Applicable copyright notices and license conditions must be preserved.
-* Dataset usage must comply with the original dataset terms and applicable platform policies.
-* Commercial use of third-party resources must be evaluated independently.
-* Users are responsible for reviewing the licenses and terms of all external dependencies before using or distributing them.
+* Transfer ownership of third-party components to the project author.
+* Override third-party licenses or usage restrictions.
+* Grant additional rights to external models, datasets, APIs, or services.
+* Automatically authorize commercial use of third-party resources.
+
+Users and organizations are responsible for reviewing and complying with the applicable terms of every external dependency.
+
+Copyright & Attribution Protection
+
+Copyright © 2026 Mahmoud Saeed Mansour.
+
+The original project contributions are protected under the terms specified in the repository’s LICENSE file.
+
+Unauthorized removal, concealment, or misrepresentation of the original authorship and required attribution is not permitted.
 
 ⸻
 
@@ -224,10 +240,4 @@ AI & Machine Learning Engineer | NLP | RAG | Deep Learning
 
 ⸻
 
-© Copyright Notice
-
-© 2026 Mahmoud Saeed Mansour.
-
-All rights reserved to the original project contributions, subject to the custom license terms stated in the LICENSE file and the applicable rights and licenses of third-party components.
-
-Unauthorized removal, concealment, or misrepresentation of the original authorship and required attribution is not permitted.
+© 2026 Mahmoud Saeed Mansour. All rights reserved to the original project contributions, subject to the applicable license terms and third-party rights.
